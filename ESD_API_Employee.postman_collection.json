@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "eae43cd2-c373-4a4e-b0c8-db11515ba98e",
+		"name": "ESD_API_Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24605399"
+	},
+	"item": [
+		{
+			"name": "login(HR)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"gopal.gupta@iiitb.ac.in\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/employee/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"employee",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details of all employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/employee/fetch",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"employee",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registering new employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"SAC\",\n    \"email\": \"rahul.tejpal@iiitb.ac.in\",\n    \"employee_id\": 2,\n    \"first_name\": \"rahul\",\n    \"last_name\": \"tejpal\",\n    \"photo_path\": \"abc\",\n    \"title\": \"MR\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/employee/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"employee",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\":\"HR\",\n        \"emp\": {\n                \"fname\": \"gopal\",\n                \"lname\": \"gupta\",\n                \"email\": \"gopal.gupta@iiitb.ac.in\",\n                \"title\": \"MR\",\n                \"photo_path\": \"abc\",\n                \"department\":\"HR\",\n                \"employee_id\": 2\n                \n                \n                \n\n        }\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/employee/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"employee",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "displaying employee details by entering email id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"gopal.gupta@iiitb.ac.in\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/employee/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleting employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"rahul.tejpal@iiitb.ac.in\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/employee/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"employee",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

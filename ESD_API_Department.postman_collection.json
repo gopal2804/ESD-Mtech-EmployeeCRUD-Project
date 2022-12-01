@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "c87b0966-bc3d-43fc-a453-47525841411c",
+		"name": "ESD_API_Department",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24605399"
+	},
+	"item": [
+		{
+			"name": "fetch name of all departments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/department/fetch",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"department",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checking capacity constraint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"HR\",\n    \"name2\":\"HR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/department/count",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"department",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "displaying name of dept by passing email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"gopal.gupta@iiitb.ac.in\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/miniproject_war/project/department/name",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"miniproject_war",
+						"project",
+						"department",
+						"name"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
