@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="esd_project">
+    <output-path>$PROJECT_DIR$/..</output-path>
+    <root id="archive" name="miniproject_war.war">
+      <element id="artifact" artifact-name="miniproject:war exploded" />
+    </root>
+  </artifact>
+</component>
